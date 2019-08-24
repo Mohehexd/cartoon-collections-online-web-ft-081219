@@ -1,6 +1,6 @@
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index do |index, name|
-    puts #{dwarves + index}
+  dwarves.each_with_index do |name, index|
+    puts "#{index + 1}. #{name}"
   end
 end
 
@@ -19,9 +19,9 @@ calls_long.any?{|i| i.length >= 5}
 #   end
 # end 
 
-def find_the_cheese(cheddar_cheese)
+def find_the_cheese(other_cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheddar_cheese.detect?{|cheese|cheddar  
+  cheese_types.detect{|cheese| other_cheeses.include? cheese }
 end
 
 
