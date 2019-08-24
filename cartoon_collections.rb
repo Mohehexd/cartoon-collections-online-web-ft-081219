@@ -21,7 +21,7 @@ calls_long.any?{|i| i.length >= 5}
 
 def find_the_cheese(other_cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.detect?{|cheese| other_cheeses.include? cheese }
+  cheese_types.detect{|cheese| other_cheeses.include? cheese }
 end
 
 
